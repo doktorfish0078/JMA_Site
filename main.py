@@ -5,13 +5,18 @@ app = Flask(__name__)
 
 @app.route('/')
 @app.route('/home')
+@app.route('/index')
 def index():
     return render_template("index.html")
 
 
-# @app.route('/search_work')
-# def search_work():
-#     return render_template("search_work.html")
+@app.route('/work_search')
+def search_work():
+    return render_template("work_search.html")\
+
+@app.route('/employees_search')
+def employees_search():
+    return render_template("employees_search.html")
 
 
 @app.route('/user/<string:name>')
