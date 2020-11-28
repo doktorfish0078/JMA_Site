@@ -4,9 +4,21 @@
 }
 
 .bg-flex {
-	background-color: rgb(250,235,215,0.875);
+	background-color: rgb(250,235,215,0.95);
 }
 
 #main_container {
 	width: 1110px;
+}
+
+.vacancy-item{
+	margin-bottom: 2px;
+	z-index: 1;
+	padding: 20px;
+	border:1px solid;
+	border-color: black;
+}
+
+.name_vacancy {
+	font-size: 24px;
 }
