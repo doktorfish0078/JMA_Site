@@ -1,41 +1,40 @@
 {% extends 'base.html' %}
 {% block title %}Главная страница{% endblock %}
 {% block body %}
-    <!--эТО прикол есчо так что можете всё стереть нахуй если зашли сюда редактировать-->
-    <script>
-   function func() {
-        alert("МАЛАДЕЕЦ)))))))))))))))))))))))))");
-   }
-  </script>
   <section>
     <div class="container-xl bg-flex" id="main_container">
       <div class="container">
-        <div class="row">
-          <a>Гавна паешь работник хуев сука</a>
-            <br><h1>А вот и лучшие придложения для вас, мудило:</h1>
-        </div>
-          {% for i in range (5) %}
-          <div class="row" style="margin-left: 30px;">
-              {% for j in range (3) %}
-            <div class="card mb-4 shadow-sm" style="margin-left: 20px;">
-              <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Соси мой болт мучачо</h4>
-                  </div>
-                  <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                      <li>Соси мой болт мучачо</li>
-                      <li>Соси мой болт мучачо</li>
-                      <li>Соси мой болт мучачо</li>
-                      <li>Соси мой болт мучачо</li>
-                    </ul>
-                      <button type="button" onclick="func()"
-                              class="btn btn-lg btn-block btn-outline-primary">Пасасать for free</button>
-                  </div>
+          <h5>Page number: {{ page }}</h5>
+          {% for i in range (10) %}
+          <div class="row">
+              <div class="vacancy-item col">
+              <div class="align-items-center row justify-content-between form-inline">
+                <div class="name_vacancy">
+                  Admin
                 </div>
-                {% endfor %}
+                <div class="price_vacancy">
+                  60000 rub
+                </div>
               </div>
-            {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="paginator">
+        {% if page>1 %}
+          <a href="/work_search/{{ page - 1 }}">Назад</a>
+        {% endif %}
+        <a href="/work_search/1">1, </a>
+        <a href="/work_search/2">2, </a>
+        <a href="/work_search/3">3, </a>
+        <a href="/work_search/4">4</a>
+        <span>&hellip;</span>
+        <a href="/work_search/99">99, </a>
+        <a href="/work_search/100">100</a>
+        {% if page<100 %}
+            <a href="/work_search/{{ page + 1 }}">Вперёд</a>
+        {% endif %}
         </div>
   </section>
 {% endblock %}
