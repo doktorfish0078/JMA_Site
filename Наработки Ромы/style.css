@@ -1,0 +1,24 @@
+.dark_mode_bg {
+	/*background-image: url(https://pbs.twimg.com/media/EPF_G9HWsAYLm94.jpg)*/
+	background-image: url(https://i.pinimg.com/736x/5c/45/73/5c4573197ec4231dffd6a1f550b5ad3f.jpg);
+}
+
+.bg-flex {
+	background-color: rgb(250,235,215,0.95);
+}
+
+#main_container {
+	width: 1110px;
+}
+
+.vacancy-item{
+	margin-bottom: 2px;
+	z-index: 1;
+	padding: 20px;
+	border:1px solid;
+	border-color: black;
+}
+
+.name_vacancy {
+	font-size: 24px;
+}
