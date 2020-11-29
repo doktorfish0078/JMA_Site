@@ -20,6 +20,10 @@
 	border-color: #007bff;
 }
 
+.vacancy-item a {text-decoration: none;}
+
+.vacancy-item a:hover {text-decoration: none;}
+
 .name_vacancy {
 	font-size: 24px;
 }
@@ -35,4 +39,13 @@
 
 .description_vacancy {
 	width: 400px;
+}
+
+.bloko_drop_item {
+	padding-left: 8px;
+}
+
+.vacancy_drop_name {
+	margin-bottom: 5px;
+	font-size: 19px;
 }
