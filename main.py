@@ -20,6 +20,25 @@ def search_work(page=1):
 def employees_search():
     return render_template("employees_search.html")
 
+@app.route('/create_cv')
+def create_cv():
+    return render_template("create_cv.html")
+
+@app.route('/create_vacancy')
+def create_vacancy():
+    return render_template("create_vacancy.html")
+
+@app.route('/authorization')
+def authorization():
+    return render_template("authorization.html")
+
+@app.route('/registration')
+def registration():
+    return render_template("registration.html")
+
+@app.route('/profile')
+def profile():
+    return render_template("profile.html")
 
 @app.route('/user/<string:name>')
 def user(name):
