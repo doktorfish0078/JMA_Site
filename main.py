@@ -13,8 +13,8 @@ def index():
 
 @app.route('/work_search')
 @app.route('/work_search/<int:page>')
-def search_work(page=1):
-    return render_template("work_search.html", page=page, user=user_in)
+def search_work():
+    return render_template("work_search.html", user=user_in)
 
 
 @app.route('/employees_search')
