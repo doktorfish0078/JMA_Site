@@ -30,6 +30,10 @@
             </li>
           </ul>
         </div>
+
+
+
+        {% if not(user) %}
         <ul class="navbar-nav justify-content-end" id="enter-bar">
           <li class="nav-item">
             <a class="nav-link" href="authorization">Вход</a>
@@ -38,6 +42,16 @@
             <a class="nav-link" href="registration">Регистрация</a>
           </li>
         </ul>
+        {% else %}
+        <ul class="navbar-nav justify-content-end" id="profile-bar">
+          <li class="nav-item">
+            <a class="nav-link" href="profile">Профиль</a>
+          </li>
+          <li class="nav-item justify-content-end">
+            <a class="nav-link" href="goodbye">Выход</a>
+          </li>
+        </ul>
+        {% endif %}
       </div>
     </nav>
   </header>
