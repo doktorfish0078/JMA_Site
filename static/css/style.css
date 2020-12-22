@@ -3,11 +3,12 @@
 	/*background-image: url(https://i.pinimg.com/736x/5c/45/73/5c4573197ec4231dffd6a1f550b5ad3f.jpg);*/
 	background-image: url("https://yobte.ru/uploads/posts/2019-11/svetljachki-v-lesu-63-foto-15.jpg");
 }
-
+.none_decor_link:active, /* активная/посещенная ссылка */
+.none_decor_link:hover,  /* при наведении */
 .none_decor_link {
-	text-decoration: none;
+  text-decoration: none;
+  color: black;
 }
-.none_decor_link:hover {text-decoration: none;}
 
 .bg-flex {
 	background-color: rgb(250,235,215,0.95);
@@ -26,7 +27,12 @@
 	padding-bottom: 10px;
 }
 
-.vacancy-item{
+.sortFilter{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.vacancy-item, .cv-item{
 	margin-top: 1px;
 	margin-bottom: 1px;
 	z-index: 1;
@@ -36,20 +42,20 @@
 }
 
 
-.name_vacancy {
+.name_vacancy, .name_cv {
 	font-size: 24px;
 }
 
-.price_vacancy {
+.price_vacancy, .price_cv {
 	font-size: 18px;
 	font-weight: 500;
 }
 
-.button_date_vacancy {
+.button_date_vacancy, .button_date_cv {
 	margin-top: 7px;
 }
 
-.description_vacancy {
+.description_vacancy, .description_cv {
 	width: 400px;
 }
 
@@ -105,3 +111,5 @@
 .profile_menu_item {
 	padding: 5px 0 5px 0;
 }
+
+
